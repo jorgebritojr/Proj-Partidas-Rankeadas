@@ -2,7 +2,7 @@ let vitorias = 75
 let derrotas = 10
 
 let saldoVitorias = calcularSaldo(vitorias,derrotas)
-let nivel = obterNivel(saldoVitorias)
+let nivel = obterNivel(vitorias)
 
 console.log("O Herói tem de saldo de "+ saldoVitorias + " e está no nível de " + nivel)
 
@@ -10,26 +10,26 @@ function calcularSaldo(vitorias, derrotas){
     return vitorias-derrotas
 }
 
-function obterNivel(saldo) {
-    if (saldo <= 10){
+function obterNivel(vitorias) {
+    if (vitorias <= 10){
         return "Ferro"
     }
-    else if (saldo > 10 &&  saldo <=20){
+    else if (vitorias > 10 &&  vitorias <=20){
         return "Bronze"
     }
-    else if (saldo > 20 &&  saldo <=50){
+    else if (vitorias > 20 &&  vitorias <=50){
         return "Prata"
     }
-    else if (saldo > 50 &&  saldo <=80){
+    else if (vitorias > 50 &&  vitorias <=80){
         return "Ouro"
     }
-    else if (saldo > 80 &&  saldo <=90){
+    else if (vitorias > 80 &&  vitorias <=90){
         return "Diamante"
     }
-    else if (saldo > 90 &&  saldo <=100){
+    else if (vitorias > 90 &&  vitorias <=100){
         return "Lendário"
     }
-        else if (saldo > 100){
+        else if (vitorias > 100){
         return "Imortal"
     }
 
